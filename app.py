@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import random
 
 # הגדרות דף ו-RTL
-st.set_page_config(page_title="Lotto Analytics Pro", layout="wide")
+st.set_page_config(page_title="לוטו אסטרטגי", page_icon="🎰", layout="wide")
 
 # עיצוב RTL וסטיילינג
 st.markdown("""
@@ -201,4 +201,5 @@ if uploaded_file:
                 df_window[[draw_id_col, "תאריך"] + num_cols + [strong_col, lotto_winners_col, double_winners_col]])
 
     except Exception as e:
+
         st.error(f"שגיאה בעיבוד הנתונים: {e}")
